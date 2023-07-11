@@ -1,0 +1,33 @@
+.agentCon h1{
+    font-size: 22px;
+    color: red;
+    margin: 1rem 0;
+    font-weight: 700;
+}
+
+.agentCon h2{
+    font-size: 18px;
+    color: black;
+    margin: 1rem 0;
+    font-weight: 700;
+}
+
+.agentCon h3{
+    font-size: 26px;
+    color: rgb(237, 46, 47);
+    margin: 1rem 0;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.agentCon p{
+    font-size: 14px;
+    color: black;
+    margin: .8rem 0;
+    font-weight: 400;
+}
+
+@media screen and (max-width:668px) {
+    .agentCon h3{
+        font-size: 18px;
+    }
+}

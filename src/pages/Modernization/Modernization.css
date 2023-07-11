@@ -1,0 +1,59 @@
+.modContainer h1{
+    color: red;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+}
+.modContainer h3{
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+
+}
+
+.modContainer p .modContainer ul li{
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 1rem;
+}
+
+.modContainer h4{
+    text-align: center;
+    margin: 1rem 0;
+    color: red;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.modContainer button{
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0.8rem 2rem;
+    background-color: #ef7d00;
+    display: block;
+    margin: 2rem auto;
+    border-radius: .6rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width:992px) {
+    .modContainer h1{
+        font-size: 1.8rem;
+    }
+    
+}
+
+@media screen and (max-width:767px) {
+    .modContainer h1{
+        font-size: 1.2rem;
+    }
+    .modContainer h4{
+        font-size: 14px;
+    }
+  
+} 

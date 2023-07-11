@@ -1,0 +1,13 @@
+.activeVideo {
+    background-color: #df1b33;
+    color: white;
+}
+.md-video-content iframe{
+    width: 100%;
+    height: 350px;
+}
+.md-video-content button{
+    padding: .6rem;
+    border: 1px solid #df1b33;
+    background-color: white;
+}

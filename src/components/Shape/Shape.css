@@ -1,0 +1,71 @@
+.skewbox{
+    float: left;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    background-size: 1170px 370px;
+    height: 330px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.skewboxContent{
+    position: absolute;
+    width: 68%;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    box-sizing: border-box;
+   text-align: center;
+   color: white;
+}
+ .skewboxContent::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: auto;
+    bottom: 0;
+    right: -200px;
+    transform: skewX(30deg);
+    width: 100%;
+    background-color: #fff;
+    height: 100%;
+    width: calc(100% - 12px);
+    background: #df1b33;
+    z-index: 1;
+}
+
+.skewboxContent::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: auto;
+    bottom: 0;
+    right: -200px;
+    transform: skewX(30deg);
+    width: 100%;
+    background-color: #fff;
+    height: 100%;
+    z-index: 0;
+}
+
+.textContent{
+    position: absolute;
+    z-index: 2;
+    width: calc(100% - 350px);
+    left: 290px;
+    margin-top: 40px;
+    color: #fff;
+}
+.imgBox{
+    float: left;
+    width: 660px;
+    height: 330px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.skewboxContent img{
+    width: 100%;
+    height: 100%;
+}

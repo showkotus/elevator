@@ -1,0 +1,103 @@
+
+.title {
+    color: var(--primaryCol);
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    background-color: white;
+    z-index: 2;
+    /* position: relative; */
+}
+
+/* 
+.title::after{
+    content: "";
+    position: absolute;
+    top: 50%;   
+    transform: translateY(-50%);
+    left: 0;
+    height: 1px;
+    opacity: .7;
+    width: 15%;
+    background-color: red;
+    z-index: 0;
+    
+}
+.title::before{
+    content: "";
+    position: absolute;
+    top: 50%;   
+    transform: translateY(-50%);
+    right: 0;
+    height: 1px;
+    opacity: .7;
+    width: 15%;
+    background-color: red;
+    z-index: 0;
+} */
+
+
+.elevatorContent p{
+    font-weight: 600;
+    position: relative;
+    padding: 0.5rem 0;
+    text-align: left;
+}
+
+.elevatorContent p::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 3rem;
+    height: 3px;
+    background-color: red;
+}
+
+@media screen and (max-width:992px) {
+    .title {
+        font-size: 30px;
+    }
+    /* .title::after, .title::before {
+        width: 18%;
+    } */
+}
+
+@media screen and (max-width:767px) {
+    .title {
+        font-size: 20px;
+    }
+    /* .title::after, .title::before {
+        width: 15%;
+    } */
+
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 90%;
+    height: 220px;
+    object-fit: cover;
+    transition: all ease-in 0.3s;
+    
+  }
+  .swiper-slide img:hover{
+    transform: scale(1.1);
+  }

@@ -1,0 +1,32 @@
+.aboutProductCon{
+    background-color: #df1b33;
+    padding: 5rem 0;
+}
+.aboutProductCon h1{
+    font-size: 2.4rem;
+    color: white;
+    line-height: 3rem;
+    font-weight: 700;
+}
+.aboutProductCon p{
+    font-size: 1rem;
+    color: white;
+    line-height: 1.9rem;
+    font-weight: 400;
+    margin: 1.3rem 0;
+}
+.aboutProductCon img {
+    width: 100%;
+    border-radius: 0.8rem;
+}
+
+
+
+@media screen and (min-width:768px) {
+    .formContent{
+        position: absolute;
+        top: -70%;
+        left: 60%;
+    }
+    
+}

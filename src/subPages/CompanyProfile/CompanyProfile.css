@@ -1,0 +1,46 @@
+
+/* company profile section  */
+.companyprofile-container iframe{
+    width: 100%;
+    height: 650px;
+    margin-bottom: 2rem;
+}
+
+.companyprofile-container h1{
+    color: red;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+}
+.companyprofile-container h3{
+    color: rgb(74, 74, 74);
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.companyprofile-container p{
+    color: rgb(74, 74, 74);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width:992px) {
+    .companyprofile-container h1{
+        font-size: 1.8rem;
+    }
+    .companyprofile-container iframe{
+        height: 450px;
+    }
+    
+}
+
+@media screen and (max-width:767px) {
+    .companyprofile-container h1{
+        font-size: 1.2rem;
+    }
+    .companyprofile-container iframe{
+        height: 300px;
+    }
+} 

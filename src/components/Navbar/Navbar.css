@@ -1,0 +1,130 @@
+.navContainer:hover {
+    background-color: white;
+    filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+}
+
+.navContainer:hover ul {
+    color: black;
+}
+
+.navContainer:hover .uppContent p {
+    color: black;
+}
+
+.navContainer:hover .uppContent span {
+    color: black;
+}
+
+.navContainer:hover .icon {
+    color: black;
+}
+
+.navContainer:hover .uppContent label {
+    color: black !important;
+}
+
+
+.custom-nav {
+    height: 75px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 50;
+}
+
+.custom-nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.custom-nav ul li {
+    padding: 0 0.5rem;
+    position: relative;
+}
+
+.custom-nav ul li ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0.5rem 1rem;
+    width: 280px;
+    display: none;
+}
+
+.custom-nav ul li ul li {
+    padding: 0.5rem 0rem;
+    transition: all ease-in 0.1s;
+}
+
+.custom-nav ul li ul li:hover {
+    margin-left: 0.3rem;
+}
+
+.custom-nav a,
+.responsiveNav a {
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    color: rgb(112, 112, 113);
+    transition: all ease-in 0.1s;
+}
+
+.custom-nav a:hover {
+    color: red;
+}
+
+.custom-nav ul li:hover>ul {
+    display: block;
+}
+
+.responsiveNav {
+    max-height: 0px;
+    overflow: hidden;
+    transition: all ease-in-out 0.2s;
+}
+
+.activeNavbar {
+    max-height: 1000px;
+
+}
+
+.responsiveNav ul li {
+    padding: 0.5rem;
+}
+
+.responsiveNav ul li ul {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    transition: all ease-in-out 0.2s;
+    margin-left: 1rem;
+}
+
+.activeNested {
+    max-height: 500px !important;
+}
+
+.hoverEffect ul a {
+    color: white !important;
+}
+
+.hoverEffect ul .icon {
+    color: white !important;
+}
+
+.hoverEffect ul li ul a {
+    color: rgb(112, 112, 113) !important;
+}
+
+@media screen and (max-width:992px) {
+    .custom-nav {
+        background-color: white;
+    }
+}

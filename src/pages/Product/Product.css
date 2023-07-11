@@ -1,0 +1,25 @@
+.productContainer h1{
+    color: #df1b33;
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+}
+.productContainer p, .productContainer ul li{
+    color: rgb(65, 65, 65);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.productContainer h2{
+    color: rgb(0, 0, 255);
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+@media screen and (max-width:668px) {
+    .productContainer h1{
+        font-size: 1.5rem;
+       
+    }
+}

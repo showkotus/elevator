@@ -1,0 +1,15 @@
+.aboutBtn .button-container a{
+    color: black;
+    font-size: 19px;
+    font-weight: 700;
+    padding:.5rem;
+    cursor: pointer;
+} 
+.aboutBtn .button-container a:hover{
+    color: red;
+}
+
+.aboutBtn .activeBtn{
+    color: red !important;
+    border-bottom: 2px solid red;
+}

@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primaryCol: #df1b33;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* background-color: tomato; */
+}
+
+h1,h2,h3,h4,h5,h6,p,li,a,button{
+    letter-spacing: 0.14px;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: .5rem;
+}
+
+.marginTop {
+    margin-top: 9rem;
+}
+
+.primaryButton {
+    background-color: #df1b33;
+    color: white !important;
+    font-size: 16px;
+    font-weight: 600;
+    padding: .4rem .8rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.primaryTitle {
+    color: var(--primaryCol);
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    background-color: white;
+    z-index: 2;
+}
+
+.primaryTitle::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    height: 1px;
+    opacity: .7;
+    width: 45%;
+    background-color: red;
+    z-index: 0;
+}
+
+.primaryTitle::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    height: 1px;
+    opacity: .7;
+    width: 45%;
+    background-color: red;
+    z-index: 0;
+}
+
+/* handle menubar inside the page  */
+
+.all-button button, .all-button h2{
+    display: block;
+    margin-top: 0.5rem;
+    padding: 0.3rem;
+}
+ .all-button .active {
+    background: white;
+    color: red!important;
+    border-bottom: 1px solid red;
+    width: 100%;
+    text-align: left;
+}
+ .all-button {
+    max-height: 0;
+    overflow: hidden;
+    transition: all ease-in-out 0.2s;
+}
+ .activeAllBtn{
+    max-height: 300px !important;
+}
+
+
+@media screen and (max-width:992px) {
+    .primaryTitle {
+        font-size: 30px;
+    }
+
+    .primaryTitle::after,
+    .primaryTitle::before {
+        width: 42%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .primaryTitle {
+        font-size: 20px;
+    }
+
+    .primaryTitle::after,
+    .primaryTitle::before {
+        width: 40%;
+    }
+    .marginTop {
+        margin-top: 7rem;
+    }
+
+}
+
+    /* 
+@media screen and (max-width:992px) {
+    body{
+        background-color: green;
+    }
+    
+}
+
+@media screen and (max-width:767px) {
+    body{
+        background-color: red;
+    }
+    
+} 
+
+*/
