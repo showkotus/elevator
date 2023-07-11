@@ -22,6 +22,7 @@ import FreightElevator from "../subPages/Products/FreightElevator/FreightElevato
 import MovingWalks from "../subPages/Products/MovingWalks/MovingWalks";
 import Completed from "../subPages/Projects/Completed/Completed";
 import OnGoing from "../subPages/Projects/OnGoing/OnGoing";
+import Clients from "../pages/Clients/Clients";
 
 const router = createBrowserRouter([
     {
@@ -116,6 +117,10 @@ const router = createBrowserRouter([
             {
                 path:"/ongoing-projects",
                 element:<OnGoing/>
+            },
+            {
+                path:"/clients",
+                element:<Clients/>
             }
         ]
     }

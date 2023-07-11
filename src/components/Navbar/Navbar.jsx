@@ -119,6 +119,7 @@ const Navbar = () => {
 
         </li>
         {/* <li><Link onClick={() => setMdNav(false)} to={"/agent"}>Agent</Link></li> */}
+        <li><Link onClick={() => setMdNav(false)} to={"/clients"}>Clients</Link></li>
     </>
     return (
         <div className={`fixed top-0 left-0 w-full z-10 ${isBanner && !shownav ? 'bg-white lg:bg-transparent' : 'shadow-lg bg-white'}`}>
