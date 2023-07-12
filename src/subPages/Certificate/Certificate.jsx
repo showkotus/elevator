@@ -9,6 +9,7 @@ import c6 from '../../assets/about/c6.jpg'
 import c7 from '../../assets/about/c7.jpg'
 import { useContext } from "react";
 import { NavbarContext } from "../../context/ContextProvider";
+import UnderConstruction from "../../components/UnderConstruction/UnderConstruction";
 
 
 // eslint-disable-next-line react/prop-types
@@ -49,8 +50,9 @@ const Certificate = () => {
         }
     ]
     return (
-        <div className={`marginTop`}>
-            <BannerBG title={"Certificate"} />
+        <div className={``}>
+        <UnderConstruction/>
+            {/* <BannerBG title={"Certificate"} />
             <div className="container">
                 <AboutButton text={'cer'} />
                 <div className="grid grid-cols-1 gap-12 my-12">
@@ -60,7 +62,7 @@ const Certificate = () => {
                         </div>)
                     }
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 };

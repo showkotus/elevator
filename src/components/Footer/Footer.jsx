@@ -32,6 +32,7 @@ const Footer = () => {
                             {/* <li className="mb-1"><Link to={'/blog'}>Blog</Link></li> */}
                             {/* <li className="mb-1"><Link to={"/agent"}>Agent</Link></li> */}
                             <li className="mb-1"><Link to={"/contact"}>Contact</Link></li>
+                            <li className="mb-1"><Link to={"/clients"}>Clients</Link></li>
                         </ul>
                     </div>
                     <div>

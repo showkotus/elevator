@@ -72,7 +72,7 @@ const Navbar = () => {
                 {/* <li><Link onClick={() => setMdNav(false)} to={'#'}>Home Elevator</Link></li> */}
                 <li><Link onClick={() => setMdNav(false)} to={'/home-elevator'}>Home Elevator</Link></li>
                 {/* <li><Link onClick={() => setMdNav(false)} to={'#'}>Panoramic Elevator</Link></li> */}
-                <li><Link onClick={() => setMdNav(false)} to={'/panoramic-elevator'}>Panoramic Elevator</Link></li>
+                {/* <li><Link onClick={() => setMdNav(false)} to={'/panoramic-elevator'}>Panoramic Elevator</Link></li> */}
                 {/* <li><Link onClick={() => setMdNav(false)} to={'#'}>Hospital Elevator</Link></li> */}
                 <li><Link onClick={() => setMdNav(false)} to={'/hospital-elevator'}>Hospital Elevator</Link></li>
                 {/* <li><Link onClick={() => setMdNav(false)} to={'#'}>Freight Elevator</Link></li> */}

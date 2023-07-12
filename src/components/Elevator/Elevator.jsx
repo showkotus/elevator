@@ -61,14 +61,14 @@ const Elevator = () => {
                                     <img src={liftThree} alt="" />
                                 </div>
 
-                                <p className='mt-3 text-[16px] text-[#9b9b9b]'>Panoramic Elevator</p>
+                                <p className='mt-3 text-[16px] text-[#9b9b9b]'>Hospital Elevator</p>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className='overflow-hidden'>
                                     <img src={liftFour} alt="" />
                                 </div>
 
-                                <p className='mt-3 text-[16px] text-[#9b9b9b]'>Hospital Elevator</p>
+                                <p className='mt-3 text-[16px] text-[#9b9b9b]'>Escalators & Moving Walks</p>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className='overflow-hidden'>
@@ -77,13 +77,13 @@ const Elevator = () => {
 
                                 <p className='mt-3 text-[16px] text-[#9b9b9b]'>Freight Elevator</p>
                             </SwiperSlide>
-                            <SwiperSlide>
+                            {/* <SwiperSlide>
                                 <div className='overflow-hidden'>
                                     <img src={liftSix} alt="" />
                                 </div>
 
                                 <p className='mt-3 text-[16px] text-[#9b9b9b]'>Escalators & Moving Walks</p>
-                            </SwiperSlide>
+                            </SwiperSlide> */}
                         </Swiper>
                     </div>
 

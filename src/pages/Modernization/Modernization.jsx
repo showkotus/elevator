@@ -3,8 +3,10 @@ import './Modernization.css'
 import mod from '../../assets/others/modern.webp'
 import { NavbarContext } from '../../context/ContextProvider';
 import { useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
 const Modernization = () => {
     const {setIsBanner} = useContext(NavbarContext)
+    const navigate = useNavigate()
     function changeNav(){
         setIsBanner(false)
     }
@@ -70,7 +72,7 @@ const Modernization = () => {
                         <h4>Reminder: Please inform the parameters and purpose of the elevator you need. We can provide you with a detailed quote</h4>
                     </div>
                     <div>
-                       <button>get a quote</button>
+                       <button onClick={() => navigate('/contact')}>get a quote</button>
                     </div>
                 </div>
             </div>
