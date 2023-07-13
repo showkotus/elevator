@@ -7,6 +7,7 @@ import c4 from '../../assets/about/c4.jpg'
 import c5 from '../../assets/about/c5.jpg'
 import c6 from '../../assets/about/c6.jpg'
 import c7 from '../../assets/about/c7.jpg'
+import c8 from '../../assets/about/c8.jpg'
 import { useContext } from "react";
 import { NavbarContext } from "../../context/ContextProvider";
 import UnderConstruction from "../../components/UnderConstruction/UnderConstruction";
@@ -47,22 +48,26 @@ const Certificate = () => {
         {
             id: 7,
             cert: c7
-        }
+        },
+        {
+            id: 8,
+            cert: c8
+        },
     ]
     return (
         <div className={``}>
-        <UnderConstruction/>
-            {/* <BannerBG title={"Certificate"} />
+        {/* <UnderConstruction/> */}
+            <BannerBG title={"Certificate"} />
             <div className="container">
                 <AboutButton text={'cer'} />
                 <div className="grid grid-cols-1 gap-12 my-12">
                     {
                         certificates.map(cert => <div key={cert.id}>
-                            <img src={cert.cert} alt=""  className="w-full h-[100vh]"/>
+                            <img src={cert.cert} alt=""  className="w-full border "/>
                         </div>)
                     }
                 </div>
-            </div> */}
+            </div>
         </div>
     );
 };
