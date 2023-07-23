@@ -1,74 +1,74 @@
 import AboutButton from "../../components/AboutButton/AboutButton";
 import BannerBG from "../../components/BannerBG/BannerBG";
 import './FactoryView.css'
-import fac1 from '../../assets/about/fac1.webp'
-import fac2 from '../../assets/about/fac2.webp'
-import fac3 from '../../assets/about/fac3.webp'
-import fac4 from '../../assets/about/fac4.webp'
-import fac5 from '../../assets/about/fac5.webp'
-import fac6 from '../../assets/about/fac6.webp'
-import fac7 from '../../assets/about/fac7.webp'
-import fac8 from '../../assets/about/fac8.webp'
+// import fac1 from '../../assets/about/fac1.webp'
+// import fac2 from '../../assets/about/fac2.webp'
+// import fac3 from '../../assets/about/fac3.webp'
+// import fac4 from '../../assets/about/fac4.webp'
+// import fac5 from '../../assets/about/fac5.webp'
+// import fac6 from '../../assets/about/fac6.webp'
+// import fac7 from '../../assets/about/fac7.webp'
+// import fac8 from '../../assets/about/fac8.webp'
 import { useContext } from "react";
 import { NavbarContext } from "../../context/ContextProvider";
-import UnderConstruction from "../../components/UnderConstruction/UnderConstruction";
+import md from '../../assets/management/img_1.jpg'
 // eslint-disable-next-line react/prop-types
 const FactoryView = () => {
-    const {setIsBanner} = useContext(NavbarContext)
-    function changeNav(){
+    const { setIsBanner } = useContext(NavbarContext)
+    function changeNav() {
         setIsBanner(false)
     }
     changeNav()
-    const facs1 = [
-        {
-            id: 1,
-            name: "Finland SGE6 CNC punching shear compound machine",
-            img: fac1
-        },
-        {
-            id: 2,
-            name: "machining center",
-            img: fac2
-        },
-        {
-            id: 3,
-            name: "sheetmetal line",
-            img: fac3
-        },
-        {
-            id: 4,
-            name: "Yamaha mounter",
-            img: fac4
-        },
-    ]
-    const facs2 = [
-        {
-            id: 1,
-            name: "Door Machine Testing",
-            img: fac5
-        },
-        {
-            id: 2,
-            name: "Precision Testing Center",
-            img: fac6
-        },
-        {
-            id: 3,
-            name: "Resistance Testing",
-            img: fac7
-        },
-        {
-            id: 4,
-            name: "Three-Coordinates Measuring",
-            img: fac8
-        },
-    ]
+    // const facs1 = [
+    //     {
+    //         id: 1,
+    //         name: "Finland SGE6 CNC punching shear compound machine",
+    //         img: fac1
+    //     },
+    //     {
+    //         id: 2,
+    //         name: "machining center",
+    //         img: fac2
+    //     },
+    //     {
+    //         id: 3,
+    //         name: "sheetmetal line",
+    //         img: fac3
+    //     },
+    //     {
+    //         id: 4,
+    //         name: "Yamaha mounter",
+    //         img: fac4
+    //     },
+    // ]
+    // const facs2 = [
+    //     {
+    //         id: 1,
+    //         name: "Door Machine Testing",
+    //         img: fac5
+    //     },
+    //     {
+    //         id: 2,
+    //         name: "Precision Testing Center",
+    //         img: fac6
+    //     },
+    //     {
+    //         id: 3,
+    //         name: "Resistance Testing",
+    //         img: fac7
+    //     },
+    //     {
+    //         id: 4,
+    //         name: "Three-Coordinates Measuring",
+    //         img: fac8
+    //     },
+    // ]
     return (
         <div className={`marginTop`}>
-            {/* <BannerBG title={"Factory View"} />
+            <BannerBG title={"Message"} />
             <div className="container">
                 <AboutButton text={'view'} />
-                <div className="factory-container">
+                {/* <div className="factory-container">
                     <div>
                         <div className="my-8">
                             <h1>“6S” Field-management and Lean Production Management</h1>
@@ -101,9 +101,34 @@ const FactoryView = () => {
                             }
                         </div>
                     </div>
+                </div> */}
+                <div className="management-container">
+                    <h1>Managing Director’s Message</h1>
+                    <div className="flex flex-col-reverse md:flex-row gap-8">
+                        <div className="w-full md:w-[50%] lg:w-[58%] ">
+                            <p>I am honored and delighted to welcome you to the "Elevator Engineers Ltd" website. Since our inception in 2005 as Elevator Engineers Co., and our transformation into a limited company in 2013, we have strived to become a leading provider of elevator and lift solutions in Bangladesh. And we offer unmatched services to our valued clients.</p>
+                            <p>At Elevator Engineers Ltd., we take immense pride in the corporate partnerships we have cultivated over the years. we are committed to build strong working relationship with corporate bodies. Our corporate clients like Meghna Group of Industries, TK Group, Rangs Group, City Group, Bashundhara Group, Renata Limited, Partex Group, Arla, Rupayan Housing Estate Ltd. SKCD are always relied on us. </p>
+                            <p className="hidden lg:block">We cherish these partnerships & trust which our clients place on us.</p>
+                            <p className="hidden lg:block">As a company, we are deeply honored to be involved in some prestigious projects of Government of Bangladesh. Out of which the BAF Base Shekh Hasina, Cox Bazar and BAF Base Bangbandhu, Kurmitola, Dhaka are notable.</p>
+                        </div>
+                        <div className="w-full md:w-[48%] lg:w-[40%]">
+                            <img src={md} alt="" className="rounded-lg" />
+                        </div>
+                    </div>
+                    <div>
+                        <p className="lg:hidden">We cherish these partnerships & trust which our clients place on us.</p>
+                        <p className="lg:hidden">As a company, we are deeply honored to be involved in some prestigious projects of Government of Bangladesh. Out of which the BAF Base Shekh Hasina, Cox Bazar and BAF Base Bangbandhu, Kurmitola, Dhaka are notable.</p>
+                        <p>These are the STAR of our dedication to delivering excellence in every endeavor.</p>
+                        <p>We have a brilliant Support & Technical team to overcoming the challenges, which have been successful in bringing Elevator Engineers Ltd to a new milestone of recognition.</p>
+                        <p>Our highly knowledgeable and experienced team of experts ensures proper install, maintain & support the elevators, escalators, generators, AVR, and other equipment with utmost professionalism.</p>
+                        <p>Our highly knowledgeable and experienced team of experts ensures proper install, maintain & support the elevators, escalators, generators, AVR, and other equipment with utmost professionalism.</p>
+                        <p>Our website serves as a portal to showcase our achievements, capabilities, and the comprehensive range of services we provide. We invite you to explore the site and learn more about our company, our valued clients, and the projects that have earned us accolades</p>
+                        <p>As the Managing Director of Elevator Engineers Ltd., I extend my sincere gratitude to our clients, partners, and team members for their unwavering support. It is your trust and belief in our abilities that have propelled us to new heights and will continue to inspire us to strive for excellence in all that we do.</p>
+                        <p>As the Managing Director of Elevator Engineers Ltd., I extend my sincere gratitude to our clients, partners, and team members for their unwavering support. It is your trust and belief in our abilities that have propelled us to new heights and will continue to inspire us to strive for excellence in all that we do.</p>
+                    </div>
                 </div>
-            </div> */}
-            <UnderConstruction/>
+            </div>
+            {/* <UnderConstruction/> */}
         </div>
     );
 };

@@ -17,7 +17,7 @@ const UpperNav = ({ prop }) => {
                         <span>|</span>
                         <p className='flex items-center gap-x-1'><CgMail /> <span>elevatorengineersltd@gmail.com</span></p>
                         <span>|</span>
-                        <p className='flex items-center gap-x-1'><IoMdCall /> <span>88-02-44806324</span></p>
+                        <p className='flex items-center gap-x-1'><IoMdCall /> <span>+8801711731953</span></p>
                     </div>
                     <div className={`${isBanner && !shownav ? "text-white" : "text-black"}`}>
                         <div className='flex items-center gap-x-2'>

@@ -1,27 +1,30 @@
-.factory-container h1{
+.management-container h1{
     color: red;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 700;
     margin-bottom: .5rem;
+    text-align: center;
+    margin-bottom: 2rem;
 }
-.factory-container h2{
+.management-container h2{
     margin: 1rem 0;
     text-align: center;
 }
-.factory-container p{
+.management-container p{
     color: rgb(74, 74, 74);
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 400;
+    margin-bottom: 1.2rem;
 }
 
-.factory-container img{
+.management-container img{
     width: 100%;
     height: 400px;
     border-radius: 5px;
 }
 
 @media screen and (max-width:992px) {
-    .factory-container h1{
+    .management-container h1{
        font-size: 1.5rem;
     }
     

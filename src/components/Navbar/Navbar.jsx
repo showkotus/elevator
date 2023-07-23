@@ -48,7 +48,7 @@ const Navbar = () => {
             </div>
             <ul className={`${showNested === 'about' ? 'activeNested' : ''}`}>
                 <li><Link onClick={() => setMdNav(false)} to={'/company-profile'}>Company Profile</Link></li>
-                <li><Link onClick={() => setMdNav(false)} to={'/factory-view'}>Managing Director's Message</Link></li>
+                <li><Link onClick={() => setMdNav(false)} to={'/management-message'}>Managing Director&apos;s Message</Link></li>
                 <li><Link onClick={() => setMdNav(false)} to={'/certificate'}>Certificates</Link></li>
                 <li><Link onClick={() => setMdNav(false)} to={'/faq'}>FAQ</Link></li>
                 <li><Link onClick={() => setMdNav(false)} to={'/video'}>Video</Link></li>

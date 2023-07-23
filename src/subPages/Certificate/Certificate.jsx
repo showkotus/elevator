@@ -10,7 +10,7 @@ import c7 from '../../assets/about/c7.jpg'
 import c8 from '../../assets/about/c8.jpg'
 import { useContext } from "react";
 import { NavbarContext } from "../../context/ContextProvider";
-import UnderConstruction from "../../components/UnderConstruction/UnderConstruction";
+// import UnderConstruction from "../../components/UnderConstruction/UnderConstruction";
 
 
 // eslint-disable-next-line react/prop-types

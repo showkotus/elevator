@@ -12,7 +12,7 @@ const Footer = () => {
                     <div>
                         <img src={logo} alt="logo of the company" width={156} height={56} />
                         <p className="mb-2"><span> House 664/A, Road # 09 (Main Road), DOHS Mirpur, Dhaka – 1216.</span></p>
-                        <p className="mb-2"> elevatorengineersltd@gmail.com | 88-02-44806324</p>
+                        <p className="mb-2"> elevatorengineersltd@gmail.com | +8801748881363</p>
                         <div className='flex items-center gap-x-2 mt-2'>
                             <CiFacebook />
                             <BsTwitter />

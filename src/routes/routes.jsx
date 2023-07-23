@@ -38,7 +38,7 @@ const router = createBrowserRouter([
                 element:<CompanyProfile/>
             },
             {
-                path:"/factory-view",
+                path:"/management-message",
                 element:<FactoryView/>
             },
             {
