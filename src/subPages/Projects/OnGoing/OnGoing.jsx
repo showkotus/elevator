@@ -1,11 +1,17 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import "./OnGoing.css"
 import { useEffect } from "react";
 import ShowProjects from "../../../components/ShowProjects/ShowProjects";
 import { InfinitySpin } from 'react-loader-spinner'
+import { NavbarContext } from "../../../context/ContextProvider";
 const OnGoing = () => {
     const [projects, setProjects] = useState([])
     const [loading, setLoading] = useState(true)
+    const { setIsBanner } = useContext(NavbarContext)
+    function changeNav() {
+        setIsBanner(false)
+    }
+    changeNav()
     useEffect(() => {
         fetch('ongoingProjects.json')
             .then(res => res.json())
