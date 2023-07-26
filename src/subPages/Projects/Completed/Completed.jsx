@@ -14,7 +14,7 @@ const Completed = () => {
     }
     changeNav()
     useEffect(() => {
-        fetch('completedProjects.json')
+        fetch('completedProject.json')
             .then(res => res.json())
             .then(data => {
                 setProjects(data)
