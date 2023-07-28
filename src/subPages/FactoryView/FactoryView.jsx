@@ -11,7 +11,7 @@ import './FactoryView.css'
 // import fac8 from '../../assets/about/fac8.webp'
 import { useContext } from "react";
 import { NavbarContext } from "../../context/ContextProvider";
-import md from '../../assets/management/img_1.jpg'
+// import md from '../../assets/management/img_1.jpg'
 // eslint-disable-next-line react/prop-types
 const FactoryView = () => {
     const { setIsBanner } = useContext(NavbarContext)
@@ -103,16 +103,19 @@ const FactoryView = () => {
                     </div>
                 </div> */}
                 <div className="management-container">
-                    <h1>Managing Director’s Message</h1>
-                    <div className="flex flex-col-reverse md:flex-row gap-8">
-                        <div className="w-full md:w-[50%] lg:w-[58%] ">
+                    <div className="flex flex-col-reverse md:flex-row-reverse gap-8 mb-8 items-center">
+                        <div className="w-full md:w-[50%] lg:w-[58%]">
+                            <h1>Managing Director’s Message</h1>
+                            <h2>Name: xxxxx</h2>
+                            <h3>position: xxxxxx</h3>
                             <p>I am honored and delighted to welcome you to the &#34;Elevator Engineers Ltd&#34; website. Since our inception in 2005 as Elevator Engineers Co., and our transformation into a limited company in 2013, we have strived to become a leading provider of elevator and lift solutions in Bangladesh. And we offer unmatched services to our valued clients.</p>
                             <p>At Elevator Engineers Ltd., we take immense pride in the corporate partnerships we have cultivated over the years. we are committed to build strong working relationship with corporate bodies. Our corporate clients like Meghna Group of Industries, TK Group, Rangs Group, City Group, Bashundhara Group, Renata Limited, Partex Group, Arla, Rupayan Housing Estate Ltd. SKCD are always relied on us. </p>
                             <p className="hidden lg:block">We cherish these partnerships & trust which our clients place on us.</p>
                             <p className="hidden lg:block">As a company, we are deeply honored to be involved in some prestigious projects of Government of Bangladesh. Out of which the BAF Base Shekh Hasina, Cox Bazar and BAF Base Bangbandhu, Kurmitola, Dhaka are notable.</p>
                         </div>
                         <div className="w-full md:w-[48%] lg:w-[40%]">
-                            <img src={md} alt="" className="rounded-lg" />
+                            {/* <img src={md} alt="md's image..." className="rounded-lg mb-4 border" /> */}
+                            <div className="w-full h-full border rounded-lg h-[300px]">image of MD...</div>
                         </div>
                     </div>
                     <div>
@@ -125,6 +128,7 @@ const FactoryView = () => {
                         <p>Our website serves as a portal to showcase our achievements, capabilities, and the comprehensive range of services we provide. We invite you to explore the site and learn more about our company, our valued clients, and the projects that have earned us accolades</p>
                         <p>As the Managing Director of Elevator Engineers Ltd., I extend my sincere gratitude to our clients, partners, and team members for their unwavering support. It is your trust and belief in our abilities that have propelled us to new heights and will continue to inspire us to strive for excellence in all that we do.</p>
                         <p>As the Managing Director of Elevator Engineers Ltd., I extend my sincere gratitude to our clients, partners, and team members for their unwavering support. It is your trust and belief in our abilities that have propelled us to new heights and will continue to inspire us to strive for excellence in all that we do.</p>
+                        <p>Thank you for considering Elevator Engineers Ltd. for your elevator and lift needs. We assure you of our unwavering commitment to deliver the best all-round products and services, ensuring your complete satisfaction.</p>
                     </div>
                 </div>
             </div>

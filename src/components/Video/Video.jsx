@@ -26,15 +26,17 @@ const Video = () => {
                         <div className='flex justify-between items-center mt-6'>
                             <button onClick={() => {
                                 if (index == 0) {
-                                    index = 5
+                                    setIndex(videos.length - 1)
+                                } else {
+                                    setIndex(index - 1)
                                 }
-                                setIndex(index - 1)
                             }}><IoIosArrowBack size={22} /></button>
                             <button onClick={() => {
-                                if (index == 5) {
-                                    index = 0
+                                if (index == (videos.length - 1)) {
+                                    setIndex(0)
+                                } else {
+                                    setIndex(index + 1)
                                 }
-                                setIndex(index + 1)
                             }}><IoIosArrowForward size={22} /></button>
                         </div>
                     </div>

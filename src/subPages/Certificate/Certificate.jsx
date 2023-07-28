@@ -10,13 +10,16 @@ import c7 from '../../assets/about/c7.jpg'
 import c8 from '../../assets/about/c8.jpg'
 import { useContext } from "react";
 import { NavbarContext } from "../../context/ContextProvider";
+import { useState } from "react";
 // import UnderConstruction from "../../components/UnderConstruction/UnderConstruction";
 
 
 // eslint-disable-next-line react/prop-types
 const Certificate = () => {
-    const {setIsBanner} = useContext(NavbarContext)
-    function changeNav(){
+    const { setIsBanner } = useContext(NavbarContext)
+    let [count, setCount] = useState(0)
+    console.log("count down", count)
+    function changeNav() {
         setIsBanner(false)
     }
     changeNav()
@@ -55,17 +58,36 @@ const Certificate = () => {
         },
     ]
     return (
-        <div className={``}>
-        {/* <UnderConstruction/> */}
+        <div className={`marginTop`}>
+            {/* <UnderConstruction/> */}
             <BannerBG title={"Certificate"} />
             <div className="container">
                 <AboutButton text={'cer'} />
-                <div className="grid grid-cols-1 gap-12 my-12">
+                {/* <div className="grid grid-cols-1 gap-12 my-12">
                     {
                         certificates.map(cert => <div key={cert.id}>
                             <img src={cert.cert} alt=""  className="w-full border "/>
                         </div>)
                     }
+                </div> */}
+                <div>
+                    <img src={certificates[count].cert} alt="" />
+                </div>
+                <div className="flex gap-x-4 justify-center mt-8">
+                    <button onClick={() => {
+                        if (count === 0) {
+                            setCount(certificates.length - 1)
+                        } else {
+                            setCount(count - 1)
+                        }
+                    }} className="uppercase bg-red-500 text-white hover:bg-black px-4 py-2 rounded-lg">Prev</button>
+                    <button onClick={() => {
+                        if (count === (certificates.length - 1)) {
+                            setCount(0)
+                        } else {
+                            setCount(count + 1)
+                        }
+                    }} className="uppercase bg-red-500 text-white hover:bg-black px-4 py-2 rounded-lg">next</button>
                 </div>
             </div>
         </div>

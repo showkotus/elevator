@@ -127,7 +127,7 @@ const Navbar = () => {
             <header className='container'>
                 <nav className={`custom-nav  ${isBanner && !shownav ? 'bg-white lg:bg-transparent hoverEffect' : 'bg-white'}`}>
                     <div>
-                        <Link onClick={() => setMdNav(false)} to={'/'}><img src={logo} alt="logo of the website" className='h-[100px] w-[156px]' /></Link>
+                        <Link onClick={() => setMdNav(false)} to={'/'}><img src={logo} alt="logo of the website" className='h-[90px] w-[156px] bg-white' /></Link>
                     </div>
                     <div className='hidden lg:block'>
                         <ul>
