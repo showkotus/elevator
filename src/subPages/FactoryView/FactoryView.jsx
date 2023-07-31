@@ -127,7 +127,6 @@ const FactoryView = () => {
                         <p>Our highly knowledgeable and experienced team of experts ensures proper install, maintain & support the elevators, escalators, generators, AVR, and other equipment with utmost professionalism.</p>
                         <p>Our website serves as a portal to showcase our achievements, capabilities, and the comprehensive range of services we provide. We invite you to explore the site and learn more about our company, our valued clients, and the projects that have earned us accolades</p>
                         <p>As the Managing Director of Elevator Engineers Ltd., I extend my sincere gratitude to our clients, partners, and team members for their unwavering support. It is your trust and belief in our abilities that have propelled us to new heights and will continue to inspire us to strive for excellence in all that we do.</p>
-                        <p>As the Managing Director of Elevator Engineers Ltd., I extend my sincere gratitude to our clients, partners, and team members for their unwavering support. It is your trust and belief in our abilities that have propelled us to new heights and will continue to inspire us to strive for excellence in all that we do.</p>
                         <p>Thank you for considering Elevator Engineers Ltd. for your elevator and lift needs. We assure you of our unwavering commitment to deliver the best all-round products and services, ensuring your complete satisfaction.</p>
                     </div>
                 </div>

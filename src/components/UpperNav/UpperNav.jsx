@@ -1,7 +1,7 @@
 import { CgMail } from 'react-icons/cg'
 import { IoMdCall } from 'react-icons/io'
 import { CiFacebook } from 'react-icons/ci'
-import { BsTwitter } from 'react-icons/bs'
+import { BsLinkedin } from 'react-icons/bs'
 import { AiOutlineInstagram, AiOutlineYoutube } from 'react-icons/ai'
 import '../Navbar/Navbar.css'
 // eslint-disable-next-line react/prop-types
@@ -22,7 +22,7 @@ const UpperNav = ({ prop }) => {
                     <div className={`${isBanner && !shownav ? "text-white" : "text-black"}`}>
                         <div className='flex items-center gap-x-2'>
                             <CiFacebook size={22} className='hover:text-red-500 cursor-pointer icon' />
-                            <BsTwitter size={22} className='hover:text-red-500 cursor-pointer icon' />
+                            <BsLinkedin size={22} className='hover:text-red-500 cursor-pointer icon' />
                             <AiOutlineInstagram size={22} className='hover:text-red-500 cursor-pointer icon' />
                             <AiOutlineYoutube size={22} className='hover:text-red-500 cursor-pointer icon' />
                         </div>

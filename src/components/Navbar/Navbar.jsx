@@ -8,7 +8,7 @@ import {ImCross} from 'react-icons/im'
 import { useContext, useEffect, useState } from 'react';
 import './Navbar.css'
 import { NavbarContext } from '../../context/ContextProvider';
-import { BsTwitter } from 'react-icons/bs';
+import { BsLinkedin } from 'react-icons/bs';
 import { CiFacebook } from 'react-icons/ci';
 import { AiOutlineInstagram, AiOutlineYoutube } from 'react-icons/ai';
 const Navbar = () => {
@@ -127,7 +127,7 @@ const Navbar = () => {
             <header className='container'>
                 <nav className={`custom-nav  ${isBanner && !shownav ? 'bg-white lg:bg-transparent hoverEffect' : 'bg-white'}`}>
                     <div>
-                        <Link onClick={() => setMdNav(false)} to={'/'}><img src={logo} alt="logo of the website" className='h-[90px] w-[156px] bg-white' /></Link>
+                        <Link onClick={() => setMdNav(false)} to={'/'}><img src={logo} alt="logo of the website" className='h-[90px] w-[156px]' /></Link>
                     </div>
                     <div className='hidden lg:block'>
                         <ul>
@@ -147,7 +147,7 @@ const Navbar = () => {
                     </ul>
                     <div className='flex items-center justify-center gap-x-4 my-6'>
                             <CiFacebook size={34} className='hover:text-red-500 cursor-pointer icon' />
-                            <BsTwitter size={34} className='hover:text-red-500 cursor-pointer icon' />
+                            <BsLinkedin size={34} className='hover:text-red-500 cursor-pointer icon' />
                             <AiOutlineInstagram size={34} className='hover:text-red-500 cursor-pointer icon' />
                             <AiOutlineYoutube size={34} className='hover:text-red-500 cursor-pointer icon' />
                         </div>
