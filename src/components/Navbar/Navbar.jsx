@@ -4,7 +4,7 @@ import UpperNav from '../UpperNav/UpperNav';
 import logo from '../../assets/navbar/navbarLogo.png'
 import { FaBars } from 'react-icons/fa'
 import { MdOutlineArrowDropDown } from 'react-icons/md'
-import {ImCross} from 'react-icons/im'
+import { ImCross } from 'react-icons/im'
 import { useContext, useEffect, useState } from 'react';
 import './Navbar.css'
 import { NavbarContext } from '../../context/ContextProvider';
@@ -44,7 +44,7 @@ const Navbar = () => {
                     } else {
                         setShowNested('about')
                     }
-                }} size={30} className="icon"/>
+                }} size={30} className="icon" />
             </div>
             <ul className={`${showNested === 'about' ? 'activeNested' : ''}`}>
                 <li><Link onClick={() => setMdNav(false)} to={'/company-profile'}>Company Profile</Link></li>
@@ -64,10 +64,10 @@ const Navbar = () => {
                     } else {
                         setShowNested('products')
                     }
-                }} size={30} className="icon"/>
+                }} size={30} className="icon" />
             </div>
 
-            <ul className={`${showNested === 'products' ? 'activeNested' : ''}`}>   
+            <ul className={`${showNested === 'products' ? 'activeNested' : ''}`}>
                 <li><Link onClick={() => setMdNav(false)} to={'/passenger-elevator'}>Passenger Elevator</Link></li>
                 {/* <li><Link onClick={() => setMdNav(false)} to={'#'}>Home Elevator</Link></li> */}
                 <li><Link onClick={() => setMdNav(false)} to={'/home-elevator'}>Home Elevator</Link></li>
@@ -91,7 +91,7 @@ const Navbar = () => {
                     } else {
                         setShowNested('project')
                     }
-                }} size={30} className="icon"/>
+                }} size={30} className="icon" />
             </div>
 
             <ul className={`${showNested === 'project' ? 'activeNested' : ''}`}>
@@ -136,9 +136,9 @@ const Navbar = () => {
                     </div>
                     <div className='flex items-center gap-x-4'>
                         <Link className='primaryButton  rounded-xl md:rounded-2xl' to={'/contact'}>Contact Us</Link>
-                        {!mdNav && <FaBars onClick={() => setMdNav(true)} size={24} className='lg:hidden cursor-pointer'/>}
-                        {mdNav && <ImCross onClick={() => setMdNav(false)} size={24} className='lg:hidden cursor-pointer'/>}
-                        
+                        {!mdNav && <FaBars onClick={() => setMdNav(true)} size={24} className='lg:hidden cursor-pointer' />}
+                        {mdNav && <ImCross onClick={() => setMdNav(false)} size={24} className='lg:hidden cursor-pointer' />}
+
                     </div>
                 </nav>
                 <div className={`lg:hidden responsiveNav ${mdNav ? 'activeNavbar' : ''} `}>
@@ -146,11 +146,11 @@ const Navbar = () => {
                         {menuList}
                     </ul>
                     <div className='flex items-center justify-center gap-x-4 my-6'>
-                            <CiFacebook size={34} className='hover:text-red-500 cursor-pointer icon' />
-                            <BsLinkedin size={34} className='hover:text-red-500 cursor-pointer icon' />
-                            <AiOutlineInstagram size={34} className='hover:text-red-500 cursor-pointer icon' />
-                            <AiOutlineYoutube size={34} className='hover:text-red-500 cursor-pointer icon' />
-                        </div>
+                        <a href="https://www.facebook.com/profile.php?id=100063929474301"><CiFacebook size={34} className='hover:text-red-500 cursor-pointer icon' /></a>
+                        <BsLinkedin size={34} className='hover:text-red-500 cursor-pointer icon' />
+                        <AiOutlineInstagram size={34} className='hover:text-red-500 cursor-pointer icon' />
+                        <AiOutlineYoutube size={34} className='hover:text-red-500 cursor-pointer icon' />
+                    </div>
                 </div>
             </header>
         </div>

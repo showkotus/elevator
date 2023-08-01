@@ -16,13 +16,13 @@ const Footer = () => {
                         <p className="mb-2"> elevatorengineersltd@gmail.com | +8801748881363</p> */}
                         <div>
                             <img src={logo} alt="logo of the company" width={156} height={56} />
-                            <p className="flex gap-x-2"><AiFillPhone size={22} className='text-red-500' /> <span>88-02-44806324</span></p>
+                            <p className="flex gap-x-2"><AiFillPhone size={22} className='text-red-500' /> <span>+880 1748881363</span></p>
                             <p className="flex gap-x-2"><CgMail size={22} className='text-red-500' /> <span>elevatorengineersltd@gmail.com</span></p>
-                            <p className="flex gap-x-2"><AiOutlineGlobal size={22} className='text-red-500' /> <span>www.elevatorbd.net</span></p>
+                            <p className="flex gap-x-2 cursor-pointer"><AiOutlineGlobal size={22} className='text-red-500 ' /> <span>www.elevator.com.bd</span></p>
                             <p className="flex gap-x-2"><AiFillHome size={22} className='text-red-500' /> <span> House 664/A, Road # 09 (Main Road), DOHS Mirpur, Dhaka – 1216.</span></p>
                         </div>
                         <div className='flex items-center gap-x-2 mt-2'>
-                            <CiFacebook />
+                            <a href="https://www.facebook.com/profile.php?id=100063929474301" target="_blank" rel="noreferrer"><CiFacebook /></a>
                             <BsLinkedin />
                             <AiOutlineInstagram />
                             <AiOutlineYoutube />
@@ -32,7 +32,7 @@ const Footer = () => {
                         <h2>Menu</h2>
                         <ul className="grid grid-cols-2">
                             <li className="mb-1"><Link to={'/'}>Home</Link></li>
-                            <li className="mb-1"><Link to={'/about'}>About</Link></li>
+                            <li className="mb-1"><Link to={'/company-profile'}>About</Link></li>
                             <li className="mb-1"><Link to={'/products'}>Products</Link></li>
                             <li className="mb-1"><Link to={'/modernization'}>Modernization</Link></li>
                             <li className="mb-1"><Link to={'/projects'}>Projects</Link></li>

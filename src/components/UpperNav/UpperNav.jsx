@@ -21,7 +21,7 @@ const UpperNav = ({ prop }) => {
                     </div>
                     <div className={`${isBanner && !shownav ? "text-white" : "text-black"}`}>
                         <div className='flex items-center gap-x-2'>
-                            <CiFacebook size={22} className='hover:text-red-500 cursor-pointer icon' />
+                            <a href="https://www.facebook.com/profile.php?id=100063929474301" target="_blank" rel="noreferrer"><CiFacebook size={22} className='hover:text-red-500 cursor-pointer icon' /></a>
                             <BsLinkedin size={22} className='hover:text-red-500 cursor-pointer icon' />
                             <AiOutlineInstagram size={22} className='hover:text-red-500 cursor-pointer icon' />
                             <AiOutlineYoutube size={22} className='hover:text-red-500 cursor-pointer icon' />
