@@ -6,25 +6,15 @@ import BannerBG from "../../../components/BannerBG/BannerBG";
 import ShowProduct from "../../../components/Products/ShowProduct/ShowProduct";
 import passenger from '../../../assets/banner/lift1.jpg'
 import { AiFillPlusCircle, AiFillMinusCircle } from 'react-icons/ai'
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { NavbarContext } from "../../../context/ContextProvider";
 const PassengerElevator = () => {
     const [showText, setShowText] = useState(false)
-    const data = {
-        img: bgImg,
-        description: {
-            about: "A passenger elevator, commonly known as an elevator or lift, is a vertical transportation device designed to move people and goods between different floors or levels within a building or structure. Elevators have become an integral part of modern urban life, making it convenient and efficient to move between floors in tall buildings, commercial complexes, residential apartments, and other structures.",
-            key: "Here are some key details about passenger elevators:",
-            details: {
-                d1: {
-                    name: "Components:",
-                    about: [
-                        "Car:<#>The enclosed platform where passengers and goods are transported. It can be made of steel, glass, or other materials.",
-                        "Hoistway (Shaft):<#>The vertical shaft through which the elevator car moves. It is typically constructed of strong materials such as concrete or steel.",
-                    ]
-                }
-            }
-        }
+    const { setIsBanner } = useContext(NavbarContext)
+    function changeNav() {
+        setIsBanner(false)
     }
+    changeNav()
     const handleText = () => {
         setShowText(!showText)
     }
