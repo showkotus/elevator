@@ -122,6 +122,14 @@ h1,h2,h3,h4,h5,h6,p,li,a,button{
 
 }
 
+.collapsable-container{
+    max-height: 0px;
+    overflow: hidden;
+}
+.active_collapsable_container{
+    max-height: 100%;
+}
+
     /* 
 @media screen and (max-width:992px) {
     body{

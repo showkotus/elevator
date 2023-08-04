@@ -10,4 +10,4 @@ const BannerBG = ({title}) => {
     );
 };
 
-export default BannerBG;
+export default BannerBG; 
