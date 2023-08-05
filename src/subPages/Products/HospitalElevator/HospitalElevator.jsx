@@ -18,7 +18,7 @@ const HospitalElevator = () => {
             <BannerBG title={"Hospital Elavator"} />
             <div className="container px-2">
                 <h1 className="my-6 text-2xl font-bold">Hospital Elevator</h1>
-                <div className="my-12 flex flex-col md:flex-row items-center gap-[3%]">
+                <div className="my-12 flex flex-col md:flex-row items-center gap-x-[3%] gap-y-8">
                     <div className="w-full md:w-[42%]">
                         <img src={passenger} alt="" className="w-full" />
                     </div>
@@ -49,15 +49,15 @@ const HospitalElevator = () => {
                         <h3 className="text-xl"><strong>4. Emergency Operation:</strong> Hospital lifts are designed with emergency backup systems to ensure operation during power outages or emergencies. This feature is critical to maintaining continuous patient care and the efficient movement of patients during unforeseen events.</h3>
                     </div>
                     <div className="my-4">
-                    <h3 className="text-xl"><strong>5. Code Compliance and Safety Features:</strong> Hospital lifts adhere to strict safety regulations and codes specific to healthcare environments. They are equipped with a range of safety features, including:</h3>
-                    <ul className="ml-8 md:ml-20 text-xl list-disc text-justify">
-                        <li>Overload sensors to prevent operation if the elevator exceeds its weight capacity.</li>
-                        <li>Emergency stop buttons to halt the elevator in case of emergencies.</li>
-                        <li>Door sensors to prevent the doors from closing when an object or person is in the doorway.</li>
-                        <li>Fire-rated doors to contain the spread of fire in case of emergencies.</li>
-                        <li>Battery-operated lighting and ventilation to ensure safety during power outages.</li>
-                    </ul>
-                </div>
+                        <h3 className="text-xl"><strong>5. Code Compliance and Safety Features:</strong> Hospital lifts adhere to strict safety regulations and codes specific to healthcare environments. They are equipped with a range of safety features, including:</h3>
+                        <ul className="ml-8 md:ml-20 text-xl list-disc text-justify">
+                            <li>Overload sensors to prevent operation if the elevator exceeds its weight capacity.</li>
+                            <li>Emergency stop buttons to halt the elevator in case of emergencies.</li>
+                            <li>Door sensors to prevent the doors from closing when an object or person is in the doorway.</li>
+                            <li>Fire-rated doors to contain the spread of fire in case of emergencies.</li>
+                            <li>Battery-operated lighting and ventilation to ensure safety during power outages.</li>
+                        </ul>
+                    </div>
                     <div className="my-4">
                         <h3 className="text-xl"><strong>6. Infection Control:</strong> Hospitals prioritize infection control, and hospital lifts are no exception. These elevators often feature antimicrobial materials and touchless controls to minimize the risk of cross-contamination and the spread of infections.</h3>
                     </div>

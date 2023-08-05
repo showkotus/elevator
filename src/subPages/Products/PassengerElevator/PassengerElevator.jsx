@@ -18,7 +18,7 @@ const PassengerElevator = () => {
             <BannerBG title={"Passenger Elavator"} />
             <div className="container px-2">
                 <h1 className="my-6 text-2xl font-bold">Passenger Elevator</h1>
-                <div className="my-12 flex flex-col md:flex-row items-center gap-[3%]">
+                <div className="my-12 flex flex-col md:flex-row items-center gap-x-[3%] gap-y-8">
                     <div className="w-full md:w-[42%]">
                         <img src={passenger} alt="" className="w-full" />
                     </div>
