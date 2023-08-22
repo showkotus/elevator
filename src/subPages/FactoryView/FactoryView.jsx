@@ -105,9 +105,9 @@ const FactoryView = () => {
                 <div className="management-container">
                     <div className="flex flex-col-reverse md:flex-row-reverse gap-8 mb-8 items-center">
                         <div className="w-full md:w-[50%] lg:w-[58%]">
-                            <h1>Managing Director’s Message</h1>
+                            {/* <h1>Managing Director’s Message</h1>
                             <h2>Name: xxxxx</h2>
-                            <h3>position: xxxxxx</h3>
+                            <h3>position: xxxxxx</h3> */}
                             <p>I am honored and delighted to welcome you to the &#34;Elevator Engineers Ltd&#34; website. Since our inception in 2005 as Elevator Engineers Co., and our transformation into a limited company in 2013, we have strived to become a leading provider of elevator and lift solutions in Bangladesh. And we offer unmatched services to our valued clients.</p>
                             <p>At Elevator Engineers Ltd., we take immense pride in the corporate partnerships we have cultivated over the years. we are committed to build strong working relationship with corporate bodies. Our corporate clients like Meghna Group of Industries, TK Group, Rangs Group, City Group, Bashundhara Group, Renata Limited, Partex Group, Arla, Rupayan Housing Estate Ltd. SKCD are always relied on us. </p>
                             <p className="hidden lg:block">We cherish these partnerships & trust which our clients place on us.</p>
