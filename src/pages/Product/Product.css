@@ -1,13 +1,14 @@
 .productContainer h1{
     color: #df1b33;
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     text-align: center;
 }
 .productContainer p, .productContainer ul li{
     color: rgb(65, 65, 65);
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 400;
+    text-align: justify;
 }
 
 .productContainer h2{
