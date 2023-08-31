@@ -4,7 +4,7 @@ import ProductList from '../../components/ProductList/ProductList';
 import './Product.css'
 import prod1 from '../../assets/Products/passengerEl.jpg'
 import prod2 from '../../assets/Products/homeEl.jpg'
-import prod3 from '../../assets/Products/prod3.webp'
+import prod3 from '../../assets/Products/panoramicEl.jpg'
 import prod4 from '../../assets/Products/hospitalEl.jpg'
 import prod5 from '../../assets/Products/freightEl.jpg'
 import prod6 from '../../assets/Products/movingEl.jpg'
@@ -106,7 +106,7 @@ const Product = () => {
                                 {
                                     pages.map(page => <Link to={page.route} key={page.id} className='border rounded-t-lg'>
                                         <img src={page.img} alt={page.name} className='rounded-t-lg h-[300px] w-full' />
-                                        <p className='my-8 text-center text-[1rem] font-bold'>{page.name}</p>
+                                        <p style={{textAlign:'center'}} className='my-4 font-bold'>{page.name} h</p>
                                     </Link>)
                                 }
                             </div>
@@ -123,7 +123,7 @@ const Product = () => {
                             <p className='mt-2'><strong>Engage with Us:</strong> Boost your initiatives by working with the leading expert in vertical transportation in the field. Contact us right away to discuss your elevator needs, arrange a consultation, and become fully acquainted with the revolutionary power of OTIS elevators, as expertly delivered by Elevator Engineers Ltd.</p>
                             <p className='mt-12'>At our elevator company, our focus extends beyond just selling elevators. We have honed our specialization in not only providing top-notch elevator sales but also delivering a complete package of post-sale services that ensure the utmost satisfaction of our clients. Our expertise encompasses thorough testing, meticulous commissioning, and dedicated customer support.</p>
                         </div>
-                        <div className='my-6'>
+                        {/* <div className='my-6'>
                             <h2>Hosting Elevator Core Strengths：</h2>
                             <hr />
                             <ul className='list-disc pl-12'>
@@ -134,7 +134,7 @@ const Product = () => {
                                 <li>24 hours after sales service</li>
                             </ul>
                         </div>
-                        <p className='my-8'>We have a wealth of <span className='text-red-600'>manufacturing</span> capabilities. Your safety, we guard.</p>
+                        <p className='my-8'>We have a wealth of <span className='text-red-600'>manufacturing</span> capabilities. Your safety, we guard.</p> */}
                         <ContactForm
                             property={{ cap: "Enter your inquiry details, We will reply you in 24 hours.", cap2: "Contact Us Now", type: { name: "*Name", email: "*Email", company: "Company", telephone: "Phone", textArea: "Message", product: "Products you want" } }} />
                     </div>
