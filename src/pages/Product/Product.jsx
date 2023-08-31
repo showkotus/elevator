@@ -9,11 +9,12 @@ import prod4 from '../../assets/Products/hospitalEl.jpg'
 import prod5 from '../../assets/Products/freightEl.jpg'
 import prod6 from '../../assets/Products/movingEl.jpg'
 import productsBanner from '../../assets/Products/productBanner.jpg'
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
 import { NavbarContext } from '../../context/ContextProvider';
 const Product = () => {
     const { setIsBanner } = useContext(NavbarContext)
+    const navigate = useNavigate()
     function changeNav() {
         setIsBanner(false)
     }
@@ -98,16 +99,23 @@ const Product = () => {
                                 <img src={productsBanner} alt="" className='rounded-lg h-full object-cover' />
                             </div>
                         </div>
-                        
+
                         <div className='mb-6 mt-12'>
                             <h2>Our Best Selling Elevator& Escalators:</h2>
                             <hr />
                             <div className='grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-8'>
                                 {
-                                    pages.map(page => <Link to={page.route} key={page.id} className='border rounded-t-lg'>
+                                    pages.map(page => <button
+                                        disabled={page.route == '/panoramic-elevator'}
+                                        onClick={
+                                            () => {
+                                                navigate(page.route)
+                                            }
+                                        }
+                                        key={page.id} className='border rounded-t-lg'>
                                         <img src={page.img} alt={page.name} className='rounded-t-lg h-[300px] w-full' />
-                                        <p style={{textAlign:'center'}} className='my-4 font-bold'>{page.name}</p>
-                                    </Link>)
+                                        <p style={{ textAlign: 'center' }} className='my-4 font-bold'>{page.name}</p>
+                                    </button>)
                                 }
                             </div>
                         </div>
@@ -116,7 +124,7 @@ const Product = () => {
                             <hr />
                             <ul className='mb-8'>
                                 {
-                                    advantages?.map((adv, index) =><li key={index} className='mb-2'><strong className='mr-1'>{adv.title}</strong>{adv.description}</li>)
+                                    advantages?.map((adv, index) => <li key={index} className='mb-2'><strong className='mr-1'>{adv.title}</strong>{adv.description}</li>)
                                 }
                             </ul>
                             <p><strong>Elevate Your Endeavors with Us: </strong> Whether you envision a modern skyscraper, a commercial building, or a residential development, our collection of OTIS elevators is ready to increase the usefulness, appeal, and value of your endeavors.</p>
