@@ -106,7 +106,7 @@ const Product = () => {
                                 {
                                     pages.map(page => <Link to={page.route} key={page.id} className='border rounded-t-lg'>
                                         <img src={page.img} alt={page.name} className='rounded-t-lg h-[300px] w-full' />
-                                        <p style={{textAlign:'center'}} className='my-4 font-bold'>{page.name} h</p>
+                                        <p style={{textAlign:'center'}} className='my-4 font-bold'>{page.name}</p>
                                     </Link>)
                                 }
                             </div>
