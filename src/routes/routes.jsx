@@ -23,6 +23,7 @@ import MovingWalks from "../subPages/Products/MovingWalks/MovingWalks";
 import Completed from "../subPages/Projects/Completed/Completed";
 import OnGoing from "../subPages/Projects/OnGoing/OnGoing";
 import Clients from "../pages/Clients/Clients";
+import ProjectView from "../subPages/Projects/ProjectView/ProjectView";
 
 const router = createBrowserRouter([
     {
@@ -117,6 +118,9 @@ const router = createBrowserRouter([
             {
                 path:"/ongoing-projects",
                 element:<OnGoing/>
+            },{
+                path:"/projectview",
+                element: <ProjectView/>
             },
             {
                 path:"/clients",

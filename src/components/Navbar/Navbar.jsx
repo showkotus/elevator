@@ -97,6 +97,7 @@ const Navbar = () => {
             <ul className={`${showNested === 'project' ? 'activeNested' : ''}`}>
                 <li><Link onClick={() => setMdNav(false)} to={'/completed-projects'}>Completed Projects</Link></li>
                 <li><Link onClick={() => setMdNav(false)} to={'/ongoing-projects'}>Ongoing Projects</Link></li>
+                <li><Link onClick={() => setMdNav(false)} to={'/projectview'}>Project View</Link></li>
             </ul>
         </li>
         {/* <li><Link onClick={() => setMdNav(false)} to={"/download"}>Download</Link></li> */}

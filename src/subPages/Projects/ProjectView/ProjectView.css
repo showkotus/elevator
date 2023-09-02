@@ -1,0 +1,9 @@
+
+.sliderContainer{
+    padding: 1rem;
+}
+
+.sliderContainer img{
+    width: 100%;
+    height: 500px;
+}

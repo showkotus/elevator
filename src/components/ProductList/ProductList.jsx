@@ -7,7 +7,6 @@ const ProductList = () => {
             <ul>
                 <li><Link to={'/passenger-elevator'}>Passenger Elevator</Link></li>
                 <li><Link to={'/home-elevator'}>Home Elevator</Link></li>
-                <li><Link to={'/panoramic-elevator'}>Panoramic Elevator</Link></li>
                 <li><Link to={'/hospital-elevator'}>Hospital Elevator</Link></li>
                 <li><Link to={'/freight-elevator'}>Freight Elevator</Link></li>
                 <li><Link to={'/escalators-moving-walks'}>Escalators & Moving Walks</Link></li>

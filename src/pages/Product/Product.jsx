@@ -4,10 +4,9 @@ import ProductList from '../../components/ProductList/ProductList';
 import './Product.css'
 import prod1 from '../../assets/Products/passengerEl.jpg'
 import prod2 from '../../assets/Products/homeEl.jpg'
-import prod3 from '../../assets/Products/panoramicEl.jpg'
 import prod4 from '../../assets/Products/hospitalEl.jpg'
 import prod5 from '../../assets/Products/freightEl.jpg'
-import prod6 from '../../assets/Products/movingEl.jpg'
+import prod6 from '../../assets/Products/movingEle.jpg'
 import productsBanner from '../../assets/Products/productBanner.jpg'
 import { useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
@@ -31,12 +30,6 @@ const Product = () => {
             name: "Home/Residential Elevator",
             img: prod2,
             route: '/home-elevator'
-        },
-        {
-            id: 3,
-            name: "Panoramic/Observation Elevator",
-            img: prod3,
-            route: '/panoramic-elevator'
         },
         {
             id: 4,
@@ -103,10 +96,23 @@ const Product = () => {
                         <div className='mb-6 mt-12'>
                             <h2>Our Best Selling Elevator& Escalators:</h2>
                             <hr />
-                            <div className='grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-8'>
+                            <div className='flex flex-wrap gap-4 justify-center my-8'>
                                 {
                                     pages.map(page => <button
-                                        disabled={page.route == '/panoramic-elevator'}
+                                        onClick={
+                                            () => {
+                                                navigate(page.route)
+                                            }
+                                        }
+                                        key={page.id} className='border rounded-t-lg w-[260px]'>
+                                        <img src={page.img} alt={page.name} className='rounded-t-lg h-[300px] w-full' />
+                                        <p style={{ textAlign: 'center' }} className='my-4 font-bold'>{page.name}</p>
+                                    </button>)
+                                }
+                            </div>
+                            {/* <div className='grid gap-6 grid-cols-1 md:grid-cols-2 my-8 w-4/5 mx-auto'>
+                                {
+                                    pages.slice(3,5).map(page => <button
                                         onClick={
                                             () => {
                                                 navigate(page.route)
@@ -117,7 +123,8 @@ const Product = () => {
                                         <p style={{ textAlign: 'center' }} className='my-4 font-bold'>{page.name}</p>
                                     </button>)
                                 }
-                            </div>
+                            </div> */}
+
                         </div>
                         <div className='my-8'>
                             <h2>Advantages of Opting for Elevator Engineers Limited:</h2>
@@ -143,8 +150,8 @@ const Product = () => {
                             </ul>
                         </div>
                         <p className='my-8'>We have a wealth of <span className='text-red-600'>manufacturing</span> capabilities. Your safety, we guard.</p> */}
-                        <ContactForm
-                            property={{ cap: "Enter your inquiry details, We will reply you in 24 hours.", cap2: "Contact Us Now", type: { name: "*Name", email: "*Email", company: "Company", telephone: "Phone", textArea: "Message", product: "Products you want" } }} />
+                        {/* <ContactForm
+                            property={{ cap: "Enter your inquiry details, We will reply you in 24 hours.", cap2: "Contact Us Now", type: { name: "*Name", email: "*Email", company: "Company", telephone: "Phone", textArea: "Message", product: "Products you want" } }} /> */}
                     </div>
                 </div>
             </div>
