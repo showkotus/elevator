@@ -24,6 +24,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 function Arrow(props) {
+    // eslint-disable-next-line react/prop-types
     const { className, style, onClick } = props;
     return (
       <div

@@ -1,5 +1,4 @@
 import BannerBG from '../../components/BannerBG/BannerBG';
-import ContactForm from '../../components/ContactForm/ContactForm';
 import ProductList from '../../components/ProductList/ProductList';
 import './Product.css'
 import prod1 from '../../assets/Products/passengerEl.jpg'
@@ -104,29 +103,14 @@ const Product = () => {
                                                 navigate(page.route)
                                             }
                                         }
-                                        key={page.id} className='border rounded-t-lg w-[260px]'>
+                                        key={page.id} className='border rounded-t-lg w-full md:w-[260px]'>
                                         <img src={page.img} alt={page.name} className='rounded-t-lg h-[300px] w-full' />
                                         <p style={{ textAlign: 'center' }} className='my-4 font-bold'>{page.name}</p>
                                     </button>)
                                 }
                             </div>
-                            {/* <div className='grid gap-6 grid-cols-1 md:grid-cols-2 my-8 w-4/5 mx-auto'>
-                                {
-                                    pages.slice(3,5).map(page => <button
-                                        onClick={
-                                            () => {
-                                                navigate(page.route)
-                                            }
-                                        }
-                                        key={page.id} className='border rounded-t-lg'>
-                                        <img src={page.img} alt={page.name} className='rounded-t-lg h-[300px] w-full' />
-                                        <p style={{ textAlign: 'center' }} className='my-4 font-bold'>{page.name}</p>
-                                    </button>)
-                                }
-                            </div> */}
-
                         </div>
-                        <div className='my-8'>
+                        <div className='my-8 px-2'>
                             <h2>Advantages of Opting for Elevator Engineers Limited:</h2>
                             <hr />
                             <ul className='mb-8'>
