@@ -5,7 +5,7 @@ import prod1 from '../../assets/Products/passengerEl.jpg'
 import prod2 from '../../assets/Products/homeEl.jpg'
 import prod4 from '../../assets/Products/hospitalEl.jpg'
 import prod5 from '../../assets/Products/freightEl.jpg'
-import prod6 from '../../assets/Products/movingEle.jpg'
+import prod6 from '../../assets/Products/movingEle.png'
 import productsBanner from '../../assets/Products/productBanner.jpg'
 import { useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
@@ -95,7 +95,7 @@ const Product = () => {
                         <div className='mb-6 mt-12'>
                             <h2>Our Best Selling Elevator& Escalators:</h2>
                             <hr />
-                            <div className='flex flex-wrap gap-4 justify-center my-8'>
+                            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center my-8'>
                                 {
                                     pages.map(page => <button
                                         onClick={
@@ -103,7 +103,7 @@ const Product = () => {
                                                 navigate(page.route)
                                             }
                                         }
-                                        key={page.id} className='border rounded-t-lg w-full md:w-[260px]'>
+                                        key={page.id} className={`border rounded-t-lg ${page?.route == '/escalators-moving-walks' && 'md:col-span-2'}`}>
                                         <img src={page.img} alt={page.name} className='rounded-t-lg h-[300px] w-full' />
                                         <p style={{ textAlign: 'center' }} className='my-4 font-bold'>{page.name}</p>
                                     </button>)
