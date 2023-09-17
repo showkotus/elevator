@@ -6,12 +6,12 @@ const Video = () => {
     let [url, setUrl] = useState("https://www.youtube.com/embed/vvhqPOu5vok")
     let [index, setIndex] = useState(0)
     const videos = [
-        "https://www.youtube.com/embed/vvhqPOu5vok",
-        "https://www.youtube.com/embed/hcN7pbpujMk",
-        "https://www.youtube.com/embed/003DiozGuIY",
-        "https://www.youtube.com/embed/qroZCbIV9hs",
-        "https://www.youtube.com/embed/PuPS8EKHIsE",
-        "https://www.youtube.com/embed/aTIOJaLfyHs",
+        "https://www.youtube.com/embed/vvhqPOu5vok?rel=0",
+        "https://www.youtube.com/embed/hcN7pbpujMk?rel=0",
+        "https://www.youtube.com/embed/003DiozGuIY?rel=0",
+        "https://www.youtube.com/embed/qroZCbIV9hs?rel=0",
+        "https://www.youtube.com/embed/PuPS8EKHIsE?rel=0",
+        "https://www.youtube.com/embed/aTIOJaLfyHs?rel=0",
     ]
 
     return (
@@ -42,15 +42,15 @@ const Video = () => {
                     </div>
                     <div className='hidden lg:flex gap-x-4 items-center mt-12 '>
                         <div className='w-[20%]'>
-                            <div onClick={() => setUrl("https://www.youtube.com/embed/vvhqPOu5vok")} className={`p-4 flex items-start gap-x-3 cursor-pointer rounded-lg ${url == "https://www.youtube.com/embed/vvhqPOu5vok" ? 'activeVideo' : ''}`}>
+                            <div onClick={() => setUrl("https://www.youtube.com/embed/vvhqPOu5vok?rel=0")} className={`p-4 flex items-start gap-x-3 cursor-pointer rounded-lg ${url == "https://www.youtube.com/embed/vvhqPOu5vok?rel=0" ? 'activeVideo' : ''}`}>
                                 <AiFillPlayCircle size={32} />
                                 <h3 className='text-[.9rem]'>Elevator Company Otis Gets Lift From Technology </h3>
                             </div>
-                            <div onClick={() => setUrl('https://www.youtube.com/embed/003DiozGuIY')} className={`p-4 flex items-start gap-x-3 cursor-pointer rounded-lg my-8 ${url == "https://www.youtube.com/embed/003DiozGuIY" ? 'activeVideo' : ''}`}>
+                            <div onClick={() => setUrl('https://www.youtube.com/embed/003DiozGuIY?rel=0')} className={`p-4 flex items-start gap-x-3 cursor-pointer rounded-lg my-8 ${url == "https://www.youtube.com/embed/003DiozGuIY?rel=0" ? 'activeVideo' : ''}`}>
                                 <AiFillPlayCircle size={32} />
                                 <h3 className='text-[.9rem]'>OTIS Elevator Global Major Projects</h3>
                             </div>
-                            <div onClick={() => setUrl('https://www.youtube.com/embed/qroZCbIV9hs')} className={`p-4 flex items-start gap-x-3 cursor-pointer rounded-lg ${url == "https://www.youtube.com/embed/qroZCbIV9hs" ? 'activeVideo' : ''}`}>
+                            <div onClick={() => setUrl('https://www.youtube.com/embed/qroZCbIV9hs?rel=0')} className={`p-4 flex items-start gap-x-3 cursor-pointer rounded-lg ${url == "https://www.youtube.com/embed/qroZCbIV9hs?rel=0" ? 'activeVideo' : ''}`}>
                                 <AiFillPlayCircle size={32} />
                                 <h3 className='text-[.9rem]'>Welcome to Tomorrow</h3>
                             </div>
@@ -59,15 +59,15 @@ const Video = () => {
                             <iframe width="660" height="400" src={url} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe >
                         </div>
                         <div className='w-[20%]'>
-                            <div onClick={() => setUrl('https://www.youtube.com/embed/PuPS8EKHIsE')} className={`p-4 flex items-start gap-x-3 cursor-pointer rounded-lg ${url == "https://www.youtube.com/embed/PuPS8EKHIsE" ? 'activeVideo' : ''}`}>
+                            <div onClick={() => setUrl('https://www.youtube.com/embed/PuPS8EKHIsE?rel=0')} className={`p-4 flex items-start gap-x-3 cursor-pointer rounded-lg ${url == "https://www.youtube.com/embed/PuPS8EKHIsE?rel=0" ? 'activeVideo' : ''}`}>
                                 <AiFillPlayCircle size={32} />
                                 <h3 className='text-[.9rem]'>Gen3™ elevator: a platform for possibility</h3>
                             </div>
-                            <div onClick={() => setUrl("https://www.youtube.com/embed/hcN7pbpujMk")} className={`p-4 flex items-start gap-x-3 cursor-pointer rounded-lg my-8 ${url == "https://www.youtube.com/embed/hcN7pbpujMk" ? 'activeVideo' : ''}`}>
+                            <div onClick={() => setUrl("https://www.youtube.com/embed/hcN7pbpujMk?rel=0")} className={`p-4 flex items-start gap-x-3 cursor-pointer rounded-lg my-8 ${url == "https://www.youtube.com/embed/hcN7pbpujMk?rel=0" ? 'activeVideo' : ''}`}>
                                 <AiFillPlayCircle size={32} />
                                 <h3 className='text-[.9rem]'>OTIS GeN2 Technology </h3>
                             </div>
-                            <div onClick={() => setUrl('https://www.youtube.com/embed/aTIOJaLfyHs')} className={`p-4 flex items-start gap-x-3 cursor-pointer rounded-lg ${url == "https://www.youtube.com/embed/aTIOJaLfyHs" ? 'activeVideo' : ''}`}>
+                            <div onClick={() => setUrl('https://www.youtube.com/embed/aTIOJaLfyHs?rel=0')} className={`p-4 flex items-start gap-x-3 cursor-pointer rounded-lg ${url == "https://www.youtube.com/embed/aTIOJaLfyHs?rel=0" ? 'activeVideo' : ''}`}>
                                 <AiFillPlayCircle size={32} />
                                 <h3 className='text-[.9rem]'>OTIS: Say hello to Future, Gen3</h3>
                             </div>
