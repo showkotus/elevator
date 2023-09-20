@@ -11,12 +11,12 @@ const ShowVideo = () => {
     }
     changeNav()
     const videos = [
-        "https://www.youtube.com/embed/vvhqPOu5vok?rel=0&showinfo=0",
-        "https://www.youtube.com/embed/hcN7pbpujMk?rel=0&showinfo=0",
-        "https://www.youtube.com/embed/003DiozGuIY?rel=0&showinfo=0",
-        "https://www.youtube.com/embed/qroZCbIV9hs?rel=0&showinfo=0",
-        "https://www.youtube.com/embed/PuPS8EKHIsE?rel=0&showinfo=0",
-        "https://www.youtube.com/embed/aTIOJaLfyHs?rel=0&showinfo=0",
+        "https://www.youtube.com/embed/vvhqPOu5vok?rel=0",
+        "https://www.youtube.com/embed/hcN7pbpujMk?rel=0",
+        "https://www.youtube.com/embed/003DiozGuIY?rel=0",
+        "https://www.youtube.com/embed/qroZCbIV9hs?rel=0",
+        "https://www.youtube.com/embed/PuPS8EKHIsE?rel=0",
+        "https://www.youtube.com/embed/aTIOJaLfyHs?rel=0",
     ]
     return (
         <div className="marginTop">
