@@ -1,5 +1,6 @@
 import AboutButton from "../../components/AboutButton/AboutButton";
 import BannerBG from "../../components/BannerBG/BannerBG";
+import md from "../../assets/about/md.jpeg"
 import './FactoryView.css'
 // import fac1 from '../../assets/about/fac1.webp'
 // import fac2 from '../../assets/about/fac2.webp'
@@ -115,7 +116,7 @@ const FactoryView = () => {
                         </div>
                         <div className="w-full md:w-[48%] lg:w-[40%]">
                             {/* <img src={md} alt="md's image..." className="rounded-lg mb-4 border" /> */}
-                            <div className="w-full h-full border rounded-lg h-[300px]">image of MD...</div>
+                            <div className="w-full h-full border rounded-lg h-[300px]"><img src={md} alt="img of the banner section" />  </div>
                         </div>
                     </div>
                     <div>
